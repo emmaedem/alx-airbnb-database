@@ -20,3 +20,17 @@ This folder contains SQL scripts demonstrating how to use different types of joi
    Finds users who have made more than 3 bookings.  
    The inner query counts bookings per user for each record in the users table.
 
+
+   # SQL Aggregation and Ranking Queries
+
+## Overview
+This task demonstrates how to use SQL **aggregation** and **window functions** to analyze booking data in the Airbnb Clone database.
+
+## Queries
+1. **Total Bookings per User**  
+   - Counts how many bookings each user has made using `COUNT()` and `GROUP BY`.
+
+2. **Property Ranking by Popularity**  
+   - Uses `RANK()` with a window function to rank properties based on the number of bookings.
+
+
