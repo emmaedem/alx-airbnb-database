@@ -10,7 +10,8 @@ SELECT
     bookings.status
 FROM bookings
 INNER JOIN users 
-ON bookings.user_id = users.user_id;
+ON bookings.user_id = users.user_id
+ORDER BY bookings.start_date DESC;
 
 -- 2. LEFT JOIN: Retrieve all properties and their reviews (including those with no reviews)
 SELECT 
@@ -21,7 +22,8 @@ SELECT
     reviews.comment
 FROM properties
 LEFT JOIN reviews
-ON properties.property_id = reviews.property_id;
+ON properties.property_id = reviews.property_id
+ORDER BY properties.name ASC;
 
 -- 3. FULL OUTER JOIN: Retrieve all users and all bookings (even unmatched)
 SELECT 
@@ -33,4 +35,5 @@ SELECT
     bookings.status
 FROM users
 FULL OUTER JOIN bookings
-ON users.user_id = bookings.user_id;
+ON users.user_id = bookings.user_id
+ORDER BY users.user_id ASC;
