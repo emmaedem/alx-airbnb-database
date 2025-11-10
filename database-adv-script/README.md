@@ -34,3 +34,11 @@ This task demonstrates how to use SQL **aggregation** and **window functions** t
    - Uses `RANK()` with a window function to rank properties based on the number of bookings.
 
 
+# Database Indexing
+
+This task adds indexes to improve query performance on frequently searched columns:
+- Users: email  
+- Bookings: user_id, property_id, status  
+- Properties: location, pricepernight  
+
+
